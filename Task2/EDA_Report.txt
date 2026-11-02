@@ -1,0 +1,41 @@
+TITANIC DATASET – EXPLORATORY DATA ANALYSIS REPORT
+==================================================
+
+Dataset Overview
+----------------
+• Rows after cleaning : 773
+• Columns             : 14
+• Overall survival    : 41.5%
+
+Key Findings
+------------
+1. Survival was strongly influenced by socio-economic status (class)
+   and gender. First-class passengers and females had much higher
+   survival rates.
+
+2. Age distribution is roughly normal with a slight right skew.
+   Median age ≈ 28 years. Children and the elderly
+   show different survival patterns.
+
+3. Fare is highly right-skewed (many cheap tickets, few very expensive
+   ones). Extreme high fares are present but expected for luxury cabins.
+
+4. Passengers traveling with family had better survival odds than those
+   traveling alone – likely due to mutual assistance during evacuation.
+
+5. Outliers exist mainly in the Fare column (luxury tickets) and a few
+   extreme ages. These are genuine data points, not errors.
+
+Business / Historical Insight
+-----------------------------
+The data confirms the historical "women and children first" protocol
+and the advantage of higher social class during the disaster. These
+patterns are useful for understanding survival bias and can be used
+as features in predictive models.
+
+Recommendations for further work (Task 3)
+-----------------------------------------
+• Visualize survival rates by class, sex, and age groups
+• Create age distribution histograms and fare boxplots
+• Scatter plots of age vs fare colored by survival
+• Heatmap of the correlation matrix
