@@ -11,7 +11,7 @@ This repository contains solutions for **at least 3 tasks** as required for succ
 | Task | Title | Status |
 |------|-------|--------|
 | **Task 1** | Data Cleaning & Preprocessing | ✅ Completed |
-| **Task 2** | Exploratory Data Analysis (EDA) | 🔄 In Progress |
+| **Task 2** | Exploratory Data Analysis (EDA) | ✅ Completed |
 | **Task 3** | Data Visualization Dashboard | ⏳ Pending |
 
 ---
@@ -20,31 +20,47 @@ This repository contains solutions for **at least 3 tasks** as required for succ
 
 **Folder:** [`Task1/`](./Task1/)
 
-### What was done
-- Used the classic **Titanic** dataset (891 passengers)
-- Inspected structure, data types, and summary statistics
-- Identified missing values (`age` ~20%, `deck` ~77%, `embarked` 2)
-- Identified and removed duplicate records
-- Handled missing values:
-  - Age → median by passenger class + sex
-  - Embarked / Embark town → mode
-  - Deck → dropped (too many missing)
-- Corrected data types (categorical columns)
-- Saved cleaned dataset as `titanic_cleaned.csv`
+- Used the classic **Titanic** dataset
+- Handled missing values, removed duplicates, corrected data types
+- Cleaned dataset ready for analysis
 
-### How to run
 ```bash
 cd Task1
-pip install pandas seaborn numpy
 python task1_data_cleaning.py
 ```
 
-The script will print a full report and generate `titanic_cleaned.csv`.
+---
+
+## Task 2: Exploratory Data Analysis (EDA)
+
+**Folder:** [`Task2/`](./Task2/)
+
+### Key Findings
+| Metric | Value |
+|--------|-------|
+| Overall survival rate | **41.5%** |
+| 1st Class survival | **64.1%** |
+| Female survival | **73.9%** |
+| Male survival | **22.0%** |
+| Alone vs Family | 34.2% vs 51.0% |
+
+### What was done
+- Descriptive statistics for all features
+- Distributions of Age and Fare
+- Correlation analysis and crosstabs
+- Outlier detection using IQR method
+- Answered 5 key business questions
+- **Bonus:** Written EDA report (`EDA_Report.txt`)
+
+```bash
+cd Task2
+python task2_eda.py
+```
 
 ---
 
 ## Dataset
-**Titanic** – survival prediction dataset commonly used in data science.
+**Titanic** – classic survival prediction dataset
 
 ---
 
@@ -54,7 +70,15 @@ CodSoft Data Analytics Intern
 
 ---
 
-## Instructions Followed
-- Separate GitHub repository for all tasks
-- Clear code with comments
-- Cleaned dataset saved (Bonus completed)
+## Repository Structure
+```
+CODSOFT_Data_Analytics/
+├── Task1/
+│   ├── task1_data_cleaning.py
+│   └── README.md
+├── Task2/
+│   ├── task2_eda.py
+│   ├── EDA_Report.txt
+│   └── README.md
+└── README.md
+```
