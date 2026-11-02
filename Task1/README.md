@@ -33,20 +33,22 @@ Import a dataset, identify data quality issues (missing values, duplicates, inco
    - **Data types**: Converted categorical columns to `category` dtype for efficiency
 
 4. **Bonus**
-   - Cleaned dataset saved as `titanic_cleaned.csv`
+   - Running the script saves the cleaned dataset as `titanic_cleaned.csv`
 
 ### Files
 | File | Description |
 |------|-------------|
 | `task1_data_cleaning.py` | Complete Python script with all steps and comments |
-| `titanic_cleaned.csv` | Cleaned dataset ready for Task 2 & 3 |
-| `titanic_original.csv` | Original raw dataset (for reference) |
 
 ### How to Run
 ```bash
 pip install pandas seaborn numpy
 python task1_data_cleaning.py
 ```
+
+The script will:
+- Print a detailed cleaning report
+- Generate `titanic_cleaned.csv` in the same folder
 
 ### Result
 - Original: 891 rows × 15 columns
